@@ -6,4 +6,5 @@ def list_notes():
         for index, row in enumerate(reader):
             print(f"{index + 1}. Дата: {row[0]}, Заголовок: {row[1]}, Сообщение: {row[2]}")
             notes.append(row)
-    return notes
+    if not notes:
+        print("Список заметок пуст.")
