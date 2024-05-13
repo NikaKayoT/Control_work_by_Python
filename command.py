@@ -4,6 +4,7 @@ from add import add_note
 from list import list_notes
 from edit import edit_note
 from delete import delete_note
+from date import filter_notes_by_date
 greet_user()
 while True:
     command = input("Введите команду: ")
@@ -14,6 +15,9 @@ while True:
         print("Заметка успешно сохранена")
     elif command == 'list':
         list_notes()
+    elif command == 'filter':
+        date = input("Введите дату для фильтрации заметок (формат YYYY-MM-DD): ")
+        filter_notes_by_date(date)    
     elif command == 'edit':
         index = int(input("Введите номер заметки для редактирования: "))
         title = input("Введите новый заголовок заметки: ")
