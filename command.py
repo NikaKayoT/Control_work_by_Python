@@ -1,5 +1,9 @@
 import sys
 from greeting import greet_user
+from add import add_note
+from list import list_notes
+from edit import edit_note
+from delete import delete_note
 greet_user()
 while True:
     command = input("Введите команду: ")
