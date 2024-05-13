@@ -8,3 +8,4 @@ def list_notes():
             notes.append(row)
     if not notes:
         print("Список заметок пуст.")
+    return notes
